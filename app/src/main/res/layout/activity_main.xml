@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+
+
+<CheckBox
+android:id="@+id/cbInput"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginBottom="10dp"
+android:checked="false"
+android:text="개인 명함 정보 입력"
+android:textSize="10dp"
+android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:id="@+id/tvSchool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textSize="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:text="기업 이름"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/edtSchool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="기업 이름을 선택하시오"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvGrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="직위"
+        android:textSize="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:visibility="invisible" />
+
+    <RadioGroup
+        android:id="@+id/rdGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="invisible">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="사원" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="주임" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="대리" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="과장" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:paddingLeft="10dp"
+        android:textSize="10dp"
+        android:text="이름"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="이름을 입력하세요"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:visibility="invisible" />
+    <TextView
+        android:id="@+id/tvtell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:paddingLeft="10dp"
+        android:text="Tell Number"
+        android:textSize="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/edtell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="핸드폰 번호를 입력하시오"
+        android:inputType="number"
+        android:padding="15dp"
+        android:visibility="invisible" />
+    <Button
+        android:id="@+id/btnPrint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="간편 명함 출력"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:visibility="invisible" />
+
+
+
+    </LinearLayout>
